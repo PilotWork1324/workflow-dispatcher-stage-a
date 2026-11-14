@@ -27,7 +27,7 @@ image_os = "ubuntu24"
 # Stage A's limits (the customer's letter of 2026-11-13, section 5): 80 executor messages per
 # attempt, 60 minutes per run, 2 fix rounds after the first result.
 max_turns = 80
-timeout_minutes = 60
+timeout_minutes = 59
 max_fix_rounds = 2
 
 [guard]
