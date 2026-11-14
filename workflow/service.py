@@ -155,10 +155,10 @@ class Service:
         def check(task):
             # Runs inside the store's write transaction, so each entry is judged against
             # the visibility and status the task has when the entry is written.
-            if not visible(user, task):
-                raise Problem(404, "task not found")
             if task["status"] == "done":
                 raise Problem(409, "completed tasks do not accept work")
+            if not visible(user, task):
+                raise Problem(404, "task not found")
 
         task = self.store.append_work(task_id, user, minutes, timestamp(), check)
         if task is None:

@@ -41,7 +41,7 @@ class TaskCreate(Input):
 
 class TaskPatch(Input):
     title: str | None = Field(default=None, min_length=1, max_length=120)
-    description: str | None = Field(default=None, max_length=2000)
+    description: str | None = Field(default=None)
     assignee_id: StrictInt | None = None
     status: Literal["todo", "in_progress", "done"] | None = None
     priority: StrictInt | None = Field(default=None, ge=1, le=5)

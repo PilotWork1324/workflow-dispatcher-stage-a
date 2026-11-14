@@ -255,7 +255,7 @@ class Store:
         params = {
             "all_tasks": user["role"] in ("admin", "observer"),
             "user_id": user["id"],
-            "query": query,
+            "query": query.lower(),
         }
         with self.connect() as conn:
             return [dict(row) for row in conn.execute(VISIBLE_TASKS, params)]
