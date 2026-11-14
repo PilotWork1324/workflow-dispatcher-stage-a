@@ -1,0 +1,48 @@
+{
+  "env_failures": [],
+  "human": [],
+  "independent_review": {
+    "head_sha": "dc828c79ca3576793286a4403e573eadc0d2d6ed",
+    "state": "pending"
+  },
+  "merges": [
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "2be80ebcae6a75cdcaba0a44bd9621279c4c1642",
+      "merge_sha": "2be80ebcae6a75cdcaba0a44bd9621279c4c1642",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "f48d929f87b6aaa0f5027a62fa9ef71e10cae017",
+      "merge_sha": "f48d929f87b6aaa0f5027a62fa9ef71e10cae017",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "310f0ba37e0a45b773d5a36a51763ef086eab779",
+      "merge_sha": "310f0ba37e0a45b773d5a36a51763ef086eab779",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    }
+  ],
+  "reports_untrusted": false,
+  "resources": {
+    "actions_minutes": 2.57,
+    "codex_runs": 0
+  },
+  "review_verdicts": [],
+  "rounds": [],
+  "semi_automatic_steps": [
+    "The independent review is started by hand on the laptop.",
+    "A person approves and merges each PR."
+  ]
+}

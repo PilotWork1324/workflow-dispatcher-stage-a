@@ -1,0 +1,20 @@
+{
+  "dependency_changes": [],
+  "fingerprint": {
+    "cumulative": "2c47eb66e748ae6f00abde13faad08c0340d76c49740a65898b85be4236693c6",
+    "round": "2c47eb66e748ae6f00abde13faad08c0340d76c49740a65898b85be4236693c6"
+  },
+  "head_sha": "dc828c79ca3576793286a4403e573eadc0d2d6ed",
+  "kind": "ai",
+  "marked_tests": [],
+  "needs_code_owner": [],
+  "repeated_fix": false,
+  "security_review_changes": [],
+  "violations": [
+    {
+      "detail": "status M",
+      "path": "acceptance/test_spec_1_identity_and_visibility.py",
+      "rule": "PROTECTED_PATH"
+    }
+  ]
+}
