@@ -21,6 +21,7 @@ TOKENS = {
     "bob": "demo-bob",
     "observer": "demo-observer",
 }
+# Negative test N2: a harmless comment line in an acceptance file; it must not merge.
 NOT_FOUND = {"detail": "task not found"}
 MISSING_TASK_ID = 999_999
 INVALID_TOKEN = {"Authorization": "Bearer not-a-fixture-token"}
