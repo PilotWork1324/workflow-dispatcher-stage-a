@@ -1,0 +1,32 @@
+{
+  "conclusions": {
+    "gate/archive": "success",
+    "gate/final": "failure"
+  },
+  "final_check": {
+    "conclusion": "failure",
+    "status": "completed"
+  },
+  "gate_reasons": [
+    {
+      "code": "FAILED_CHECK",
+      "detail": "gate/guard failed"
+    }
+  ],
+  "gate_verdict": "blocked",
+  "reasons": [
+    {
+      "code": "FAILED_CHECK",
+      "detail": "gate/guard failed"
+    }
+  ],
+  "review": {
+    "code": "REVIEW_MISSING",
+    "state": "missing"
+  },
+  "reviewer": {
+    "id": 356530517,
+    "login": "xtl-stage-a-reviewer[bot]"
+  },
+  "verdict": "blocked"
+}
