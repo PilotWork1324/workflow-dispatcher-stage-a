@@ -1,16 +1,21 @@
-# The quality gate's configuration for this repository. The gate reads it from the
-# default branch only, never from the PR it judges. It is a protected path: an
+# The quality gate's configuration for the stage A demo stand. The gate reads it from the
+# default branch only (candidate/a), never from the PR it judges. It is a protected path: an
 # executor's PR that touches it fails gate/guard, and CODEOWNERS names the CEO for it.
 #
-# The pipeline: XThoughtLabs/quality-gate, called by .github/workflows/judge.yml
-# at the full commit SHA fdc99189d797e0df35baaf64233cb6e657628e31.
+# The pipeline: XThoughtLabs/quality-gate, called by .github/workflows/judge.yml and
+# .github/workflows/finalize.yml at the full commit SHA 21b42312fb92bf428831d4420bd185c6e5f584f5.
 # The executor and the spec-test author run on the CEO's laptop, not on GitHub (DEV-06):
 # a local launcher reads [limits], [spec_tests] and [feedback] from this file on the
-# default branch, and acts on GitHub only as the xtl-gate-executor app.
+# default branch, and acts on GitHub only as the xtl-stage-a-executor app.
+# The independent review is the xtl-stage-a-reviewer app's commit status independent-review;
+# the xtl-stage-a-controller app posts the required check stage-a/policy and merges.
 # {raw} is the check's raw output folder. {env:NAME} is a value from the judge's trusted context.
 
 [project]
-baseline_sha = "821330ffbb19f545fb81f3c223b0a286ff6c4980"
+# The stand's starting commit (HQ-TASK-M1-B1): gate-practice-app's tree at 6e3b9b9 with LICENSE
+# and NOTICE. The gate's report lists every later commit on candidate/a that no merged PR brought;
+# the configuration commit that set this file, pushed before the rules (M1-B2), is listed there.
+baseline_sha = "943a743da7fc9490ce3338d312827a585c7fb23f"
 integration_branch = "candidate/a"
 
 [environment]
@@ -19,9 +24,11 @@ python = "3.13"
 image_os = "ubuntu24"
 
 [limits]
+# Stage A's limits (the customer's letter of 2026-11-13, section 5): 80 executor messages per
+# attempt, 60 minutes per run, 2 fix rounds after the first result.
 max_turns = 80
 timeout_minutes = 60
-max_fix_rounds = 3
+max_fix_rounds = 2
 
 [guard]
 # Added to the gate's fixed list (design section 6), never replacing it.
@@ -32,8 +39,8 @@ threshold_keys = []
 
 [feedback]
 judge_workflow_path = ".github/workflows/judge.yml"
-reviewer_app = "xtl-gate-reviewer"
-executor_app = "xtl-gate-executor"
+reviewer_app = "xtl-stage-a-reviewer"
+executor_app = "xtl-stage-a-executor"
 
 [acceptance]
 # The CEO sets this true, through a maintenance PR, before the final PR (decision O, condition d).
