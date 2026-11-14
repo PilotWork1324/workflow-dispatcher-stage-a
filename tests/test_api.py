@@ -5,6 +5,7 @@ import pytest
 
 def test_health(client):
     assert client.get("/health").json()["status"] == "ok"
+    assert client.get("/health").status_code == 200
 
 
 @pytest.mark.parametrize("path", ["/users", "/tasks", "/tasks/1", "/tasks/export"])
