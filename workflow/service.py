@@ -116,6 +116,7 @@ class Service:
         instant = parse_time(at)
         return [row for row in self.store.visible_rows(user)
                 if row["status"] != "done" and row["due_at"] is not None
+                and (user["role"] != "member" or row["creator_id"] == user["id"])
                 and parse_time(row["due_at"]) < instant]
 
     def update(self, user, task_id, values):
