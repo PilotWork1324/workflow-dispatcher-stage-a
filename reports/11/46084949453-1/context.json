@@ -1,0 +1,30 @@
+{
+  "author": "xtl-stage-a-executor[bot]",
+  "base_sha": "ed5bd52863cbe3c8bc1efacaacc75c080d5a41e5",
+  "baseline_sha": "943a743da7fc9490ce3338d312827a585c7fb23f",
+  "config_hashes": {
+    ".github/workflows/executor.yml": "missing",
+    ".github/workflows/feedback.yml": "missing",
+    ".github/workflows/judge.yml": "62b6e64cf85776076945480c0a6e9b3857f957c38d4f413946f168416c1e7a71",
+    ".github/workflows/spec-tests.yml": "missing",
+    "CODEOWNERS": "b7d6029338fedbe0f76c9143ce4713c1bf73c78eed21ed4f45f8b08e0f2a5589",
+    "prompts/executor.md": "6d80c44da4d759d14f66a5c2610759bacac70e2c8a3c07165a162669a59a5030",
+    "prompts/spec-tests.md": "78e4b207926e3b5cffa38204aec5a80bc1ecc7047fa45d405e4f16351663419f",
+    "quality.toml": "25730d2cd5708174877d42adc7f633f9e608a826a0a8c646f34f7e11dbe7e21e",
+    "security-review.md": "missing"
+  },
+  "event": "pull_request_target",
+  "execution_environment": {
+    "image_os": "ubuntu24",
+    "image_version": "20261122.23.1"
+  },
+  "gate_sha": "21b42312fb92bf428831d4420bd185c6e5f584f5",
+  "head_ref": "ai/9-lt-t1-patch-accepts-an-assignee-id",
+  "head_repository": "PilotWork1324/workflow-dispatcher-stage-a",
+  "head_sha": "1d52530df09da897e8c3891d36a3e67d6314d2b5",
+  "pr": 11,
+  "repository": "PilotWork1324/workflow-dispatcher-stage-a",
+  "run_attempt": "1",
+  "run_id": "46084949453",
+  "trusted_sha": "ed5bd52863cbe3c8bc1efacaacc75c080d5a41e5"
+}

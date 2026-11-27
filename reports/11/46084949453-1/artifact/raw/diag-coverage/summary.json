@@ -1,0 +1,12 @@
+{
+  "changed_lines": 1,
+  "changed_lines_covered": 1,
+  "changed_percent": 100.0,
+  "files": {
+    "workflow/api.py": {
+      "changed": 1,
+      "covered": 1
+    }
+  },
+  "whole_percent": 99.36708860759494
+}
