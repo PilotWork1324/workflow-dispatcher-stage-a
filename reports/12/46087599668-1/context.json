@@ -1,0 +1,30 @@
+{
+  "author": "xtl-stage-a-executor[bot]",
+  "base_sha": "ad349a36ec205a91c8ba6a2322ed1aca819fe3a5",
+  "baseline_sha": "943a743da7fc9490ce3338d312827a585c7fb23f",
+  "config_hashes": {
+    ".github/workflows/executor.yml": "missing",
+    ".github/workflows/feedback.yml": "missing",
+    ".github/workflows/judge.yml": "62b6e64cf85776076945480c0a6e9b3857f957c38d4f413946f168416c1e7a71",
+    ".github/workflows/spec-tests.yml": "missing",
+    "CODEOWNERS": "b7d6029338fedbe0f76c9143ce4713c1bf73c78eed21ed4f45f8b08e0f2a5589",
+    "prompts/executor.md": "6d80c44da4d759d14f66a5c2610759bacac70e2c8a3c07165a162669a59a5030",
+    "prompts/spec-tests.md": "78e4b207926e3b5cffa38204aec5a80bc1ecc7047fa45d405e4f16351663419f",
+    "quality.toml": "25730d2cd5708174877d42adc7f633f9e608a826a0a8c646f34f7e11dbe7e21e",
+    "security-review.md": "missing"
+  },
+  "event": "pull_request_target",
+  "execution_environment": {
+    "image_os": "ubuntu24",
+    "image_version": "20261122.23.1"
+  },
+  "gate_sha": "21b42312fb92bf428831d4420bd185c6e5f584f5",
+  "head_ref": "ai/10-lt-t2-a-member-s-overdue-view-misses",
+  "head_repository": "PilotWork1324/workflow-dispatcher-stage-a",
+  "head_sha": "8b30913f5180dc434e746dfaab7b001f7754feb1",
+  "pr": 12,
+  "repository": "PilotWork1324/workflow-dispatcher-stage-a",
+  "run_attempt": "1",
+  "run_id": "46087599668",
+  "trusted_sha": "ad349a36ec205a91c8ba6a2322ed1aca819fe3a5"
+}
