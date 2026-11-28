@@ -1,0 +1,27 @@
+{
+  "conclusions": {
+    "gate/archive": "success",
+    "gate/final": null
+  },
+  "final_check": {
+    "conclusion": null,
+    "status": "in_progress"
+  },
+  "gate_reasons": [],
+  "gate_verdict": "ready-for-human",
+  "reasons": [
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "no independent review of 03b4aa4fc05d2da3df009a016c3df0f331b216ac exists yet"
+    }
+  ],
+  "review": {
+    "code": "REVIEW_MISSING",
+    "state": "missing"
+  },
+  "reviewer": {
+    "id": 356530517,
+    "login": "xtl-stage-a-reviewer[bot]"
+  },
+  "verdict": "awaiting-review"
+}
