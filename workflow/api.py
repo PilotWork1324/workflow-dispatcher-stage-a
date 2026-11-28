@@ -56,8 +56,6 @@ class TaskPatch(Input):
                 raise ValueError(f"{name} cannot be null")
         if "title" in self.model_fields_set and not self.title.strip():
             raise ValueError("blank title")
-        if self.title is not None:
-            self.title = self.title.strip()
         if self.due_at is not None:
             self.due_at = parse_time(self.due_at).isoformat(timespec="microseconds")
         return self
