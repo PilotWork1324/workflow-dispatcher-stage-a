@@ -80,7 +80,7 @@ class Service:
         return task
 
     def assignee_exists(self, assignee_id):
-        if assignee_id and not any(
+        if assignee_id is not None and not any(
             u["id"] == assignee_id and u["role"] != "observer" for u in self.store.users()
         ):
             raise Problem(422, "assignee must be an administrator or member")
