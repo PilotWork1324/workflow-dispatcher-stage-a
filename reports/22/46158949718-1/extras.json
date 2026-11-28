@@ -1,0 +1,116 @@
+{
+  "env_failures": [],
+  "human": [],
+  "independent_review": {
+    "head_sha": "12312cb6e252fb574f3002b41dad8941589a9969",
+    "state": "pending"
+  },
+  "merges": [
+    {
+      "approvals": 0,
+      "final_conclusion": "success",
+      "head_sha": "6b726a658e91db1ce47ea7dd687e4f143de4d936",
+      "merge_sha": "bc9126695bb343b0330065ada6a25ccb02566522",
+      "merged_by": null,
+      "pr": 21,
+      "security_review_changed": false,
+      "via_pr": true
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": "success",
+      "head_sha": "e64f75cf98965d8a98746b9a6f5ac78ce10beb71",
+      "merge_sha": "002b819f603967550ba24ea7ed7222bb91a59f6e",
+      "merged_by": null,
+      "pr": 20,
+      "security_review_changed": false,
+      "via_pr": true
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": "success",
+      "head_sha": "8b30913f5180dc434e746dfaab7b001f7754feb1",
+      "merge_sha": "ffc6a169ff15c474317ba3e70718b56bb1179fe5",
+      "merged_by": null,
+      "pr": 12,
+      "security_review_changed": false,
+      "via_pr": true
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": "success",
+      "head_sha": "1d52530df09da897e8c3891d36a3e67d6314d2b5",
+      "merge_sha": "ad349a36ec205a91c8ba6a2322ed1aca819fe3a5",
+      "merged_by": null,
+      "pr": 11,
+      "security_review_changed": false,
+      "via_pr": true
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": "success",
+      "head_sha": "9e890f9f6367232df7368c0a46eba13ca9f4898e",
+      "merge_sha": "4ce6b5e342462c4315adbe439dcb1f45b76dd155",
+      "merged_by": null,
+      "pr": 7,
+      "security_review_changed": false,
+      "via_pr": true
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "9bfdc796334beb23bff46dcc0e059b60cb92ff2b",
+      "merge_sha": "9bfdc796334beb23bff46dcc0e059b60cb92ff2b",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "ed5bd52863cbe3c8bc1efacaacc75c080d5a41e5",
+      "merge_sha": "ed5bd52863cbe3c8bc1efacaacc75c080d5a41e5",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "2be80ebcae6a75cdcaba0a44bd9621279c4c1642",
+      "merge_sha": "2be80ebcae6a75cdcaba0a44bd9621279c4c1642",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "f48d929f87b6aaa0f5027a62fa9ef71e10cae017",
+      "merge_sha": "f48d929f87b6aaa0f5027a62fa9ef71e10cae017",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    },
+    {
+      "approvals": 0,
+      "final_conclusion": null,
+      "head_sha": "310f0ba37e0a45b773d5a36a51763ef086eab779",
+      "merge_sha": "310f0ba37e0a45b773d5a36a51763ef086eab779",
+      "merged_by": "XThoughtLabs",
+      "pr": null,
+      "via_pr": false
+    }
+  ],
+  "reports_untrusted": false,
+  "resources": {
+    "actions_minutes": 3.43,
+    "codex_runs": 0
+  },
+  "review_verdicts": [],
+  "rounds": [],
+  "semi_automatic_steps": [
+    "The independent review is started by hand on the laptop.",
+    "A person approves and merges each PR."
+  ]
+}
