@@ -111,10 +111,11 @@ class Service:
         return {"items": page, "total": len(rows), "limit": limit, "offset": offset}
 
     def overdue(self, user, at):
+        # Every visible task is judged, not a page of them: the view has no limit (#19).
         # Both sides are aware UTC datetimes, so they compare as instants whatever offset
         # either was written with; a task due exactly at that instant is not yet overdue.
         instant = parse_time(at)
-        return [row for row in self.list(user, "", 100, 0)["items"]
+        return [row for row in self.store.visible_rows(user)
                 if row["status"] != "done" and row["due_at"] is not None
                 and parse_time(row["due_at"]) < instant]
 
