@@ -80,7 +80,7 @@ class Service:
         return task
 
     def assignee_exists(self, assignee_id):
-        if assignee_id is not None and not any(
+        if assignee_id and not any(
             u["id"] == assignee_id and u["role"] != "observer" for u in self.store.users()
         ):
             raise Problem(422, "assignee must be an administrator or member")
@@ -114,7 +114,7 @@ class Service:
         # Both sides are aware UTC datetimes, so they compare as instants whatever offset
         # either was written with; a task due exactly at that instant is not yet overdue.
         instant = parse_time(at)
-        return [row for row in self.store.visible_rows(user)
+        return [row for row in self.list(user, "", 100, 0)["items"]
                 if row["status"] != "done" and row["due_at"] is not None
                 and parse_time(row["due_at"]) < instant]
 
