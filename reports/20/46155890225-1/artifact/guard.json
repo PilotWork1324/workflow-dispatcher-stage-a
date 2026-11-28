@@ -1,0 +1,14 @@
+{
+  "dependency_changes": [],
+  "fingerprint": {
+    "cumulative": "8c321a972cd114ad492d587f06313002cf89743e48a266e549e495b11e777c38",
+    "round": "8c321a972cd114ad492d587f06313002cf89743e48a266e549e495b11e777c38"
+  },
+  "head_sha": "e64f75cf98965d8a98746b9a6f5ac78ce10beb71",
+  "kind": "ai",
+  "marked_tests": [],
+  "needs_code_owner": [],
+  "repeated_fix": false,
+  "security_review_changes": [],
+  "violations": []
+}
